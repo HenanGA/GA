@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .back{
+        background-image: url(img/背景.png);
+    }
+    .container{
+        background-color: #86aacb;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .nav{
+        /* .nav导航栏的样式修改为display: inline-block;，这将使其在同一行显示，并保留块级元素的特性。 */
+        display: inline-block;
+        width: 400px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        line-height: 30px;
+    
+    }
+    .nav2{
+        line-height: 30px;
+        display: inline-block;
+        float: right;
+        width: 780px;
+        height: 30px;
+        background-color: black;
+        color: white;
+    }
+    .main{
+        height: 700px;
+    }
+    .left{
+        float: left;
+        width: 400px;
+        height: 600px;
+    }
+    .left p{
+        margin-top: 4px;
+        margin-left: 4px;
+    }
+
+    #right{
+        float: right;
+        width: 780px;
+        height: 600px;
+        font-size: 16px;
+    }
+    #right p {
+ /* margin-top: 2em;：设置段落上方的外边距为 2 倍当前元素的字体大小。这会在每个段落的顶部添加一些空白空间。
+    margin-bottom: 2em;：设置段落下方的外边距为 2 倍当前元素的字体大小。这会在每个段落的底部添加一些空白空间。
+    text-indent: 40px;：设置段落文本的首行缩进为 40 像素。这会使每个段落的第一行文本向右缩进 40 像素。
+    text-align: left;：设置文本对齐方式为左对齐。这确保了文本在段落中是从左侧开始排列的。*/
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-indent: 40px;
+        text-align: left;
+    }
+    #right img{
+        display: block;
+        float: right;
+        height: 620px;
+        width: 300px;
+    }
+    #right img.tupian{
+        float: left;
+        width: 450px;
+        height: 300px;
+    }
+
+    .left audio{
+        margin-top: 60px;
+    }
+
+    .one-nav {
+        width: 100%;
+        height: 40px;
+        /* background-color: aqua; */
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .one-nav a {
+        line-height: 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        /* border: 2px solid red; */
+        padding: 0px 8px;
+        border-radius: 50%;
+    }
+    .one-nav a:link{
+        color: white;
+    }
+    .one-nav a:visited{
+        color: white;
+    }
+    .one-nav a:hover{
+        color: palevioletred;
+        background-color: pink;
+    }
+
+
+</style>
+
+<body>
+    <div class="back">
+        <div class="container">
+            <div class="header" align="center">
+                <img src="img/个人简介图片.png" alt="" width="1200px" height="600px">
+            </div>
+            <div class="one-nav">
+                <a href="个人简介.html">主页</a>
+                <a href="#">介绍</a>
+            </div>
+            <div class="nav" align="left">
+                <span align="center"><b>关于我</b></span>
+            </div>
+            <div class="nav2">
+                <span><b>热爱生活</b></span>
+            </div>
+            <div class="main">
+                <div class="left">
+                    <img src="img/头像.png" alt="头像" align="center" width="400px" height="350px">
+                    <p><b>姓名：</b>GA</p>
+                    <p><b>性别：</b>男</p>
+                    <p><b>爱好：</b>听歌，写编程，体验生活</p>
+                    <p><b>性格：</b>有时开朗，有时冷漠</p>
+                    <p><b>家乡：</b>河南-桐柏</p>
+                    <p><b>专业：</b>计算机</p>
+                    <audio src="./miuse/阿軒 - 别感动自己 (V0).mp3" controls></audio>
+                </div>
+
+                <div id="right" align="center">
+                    <img src="img/右边图片.png" alt="">
+                    <p><b>
+                        一、在这个诺大的城市，不知道怎么的有时候我喜欢一个人，去一个地方独自带上一会，享受独处的时光。
+                    </b></p>
+                    <p><b>
+                        二、我相信未来的某一天，会感谢现在努力学习的你！因为努力从不是一天就可以完成的，相信自己！加油！
+                    </b></p>
+                    <p><b>
+                        三、总会有一件事让你瞬间长大，也总会有一个人让你泪如雨下。愿你早日领教这个世界的深深恶意，让自己活得开心得意。
+                    </b></p>
+                    <p><b>
+                        四、岁月从来不曾静好，只是有人在替你背负枷锁，含泪前行。也许是父母，也许是朋友，也许是陌生人……无论是谁，请记得常怀感恩之心。
+                    </b></p>
+                    <img src="img/生活.png" alt="" class="tupian">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
